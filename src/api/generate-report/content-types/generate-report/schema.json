@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generate_reports",
+  "info": {
+    "singularName": "generate-report",
+    "pluralName": "generate-reports",
+    "displayName": "Generate-Report",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "text"
+    },
+    "Archivo": {
+      "type": "text"
+    },
+    "Id_Master": {
+      "type": "text"
+    }
+  }
+}

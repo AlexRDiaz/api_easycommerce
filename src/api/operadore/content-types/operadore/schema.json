@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operadores",
+  "info": {
+    "singularName": "operadore",
+    "pluralName": "operadores",
+    "displayName": "OPERADORES",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Telefono": {
+      "type": "text"
+    },
+    "Costo_Operador": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "operadore"
+    },
+    "transportadora": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::transportadora.transportadora",
+      "inversedBy": "operadores"
+    },
+    "sub_ruta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-ruta.sub-ruta",
+      "inversedBy": "operadores"
+    },
+    "pedidos_shopifies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pedidos-shopify.pedidos-shopify",
+      "mappedBy": "operadore"
+    }
+  }
+}

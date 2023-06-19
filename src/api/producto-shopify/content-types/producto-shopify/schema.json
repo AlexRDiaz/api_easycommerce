@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "producto_shopifies",
+  "info": {
+    "singularName": "producto-shopify",
+    "pluralName": "producto-shopifies",
+    "displayName": "Producto-Shopify",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_shopify": {
+      "type": "text"
+    },
+    "Cantidad": {
+      "type": "text"
+    },
+    "Precio": {
+      "type": "text"
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Estado": {
+      "type": "text",
+      "default": "Pendiente"
+    },
+    "pedidos_shopify": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pedidos-shopify.pedidos-shopify",
+      "inversedBy": "producto_shopifies"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "easycommerce",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.11.1",
+    "@strapi/plugin-users-permissions": "4.11.1",
+    "@strapi/plugin-i18n": "4.11.1",
+    "better-sqlite3": "8.0.1",
+    "@crystaldelta/json2xls": "^0.1.4",
+    "json2xls": "^0.1.2",
+    "moment": "^2.29.4",
+    "nodemailer": "^6.9.1"
+
+
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "dd1838cc-7431-4b22-b1a6-5cb0bbf0be44"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

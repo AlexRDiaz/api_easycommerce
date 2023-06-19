@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingresos_egresos",
+  "info": {
+    "singularName": "ingresos-egreso",
+    "pluralName": "ingresos-egresos",
+    "displayName": "IngresosEgresos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "text"
+    },
+    "Tipo": {
+      "type": "text"
+    },
+    "Persona": {
+      "type": "text"
+    },
+    "Motivo": {
+      "type": "text"
+    },
+    "Comprobante": {
+      "type": "text"
+    },
+    "Monto": {
+      "type": "text"
+    }
+  }
+}

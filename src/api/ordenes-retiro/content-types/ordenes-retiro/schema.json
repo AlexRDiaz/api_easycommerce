@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordenes_retiros",
+  "info": {
+    "singularName": "ordenes-retiro",
+    "pluralName": "ordenes-retiros",
+    "displayName": "OrdenesRetiro",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Monto": {
+      "type": "text"
+    },
+    "Codigo": {
+      "type": "text"
+    },
+    "Fecha": {
+      "type": "text"
+    },
+    "Estado": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "ordenes_retiros"
+    },
+    "CodigoGenerado": {
+      "type": "text"
+    },
+    "FechaTransferencia": {
+      "type": "text"
+    },
+    "Comprobante": {
+      "type": "text"
+    },
+    "Comentario": {
+      "type": "text"
+    }
+  }
+}

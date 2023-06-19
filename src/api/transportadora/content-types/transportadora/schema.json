@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transportadoras",
+  "info": {
+    "singularName": "transportadora",
+    "pluralName": "transportadoras",
+    "displayName": "TRANSPORTADORAS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "text"
+    },
+    "rutas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ruta.ruta",
+      "inversedBy": "transportadoras"
+    },
+    "pedidos_shopifies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pedidos-shopify.pedidos-shopify",
+      "mappedBy": "transportadora"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "transportadora"
+    },
+    "operadores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::operadore.operadore",
+      "mappedBy": "transportadora"
+    },
+    "Costo_Transportadora": {
+      "type": "text"
+    },
+    "Telefono1": {
+      "type": "text"
+    },
+    "Telefono2": {
+      "type": "text"
+    }
+  }
+}

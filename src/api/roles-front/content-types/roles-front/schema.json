@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roles_fronts",
+  "info": {
+    "singularName": "roles-front",
+    "pluralName": "roles-fronts",
+    "displayName": "RolesFront"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "roles_front"
+    }
+  }
+}

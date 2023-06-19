@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generate_codes",
+  "info": {
+    "singularName": "generate-code",
+    "pluralName": "generate-codes",
+    "displayName": "GenerateCode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    }
+  }
+}

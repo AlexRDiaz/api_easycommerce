@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_rutas",
+  "info": {
+    "singularName": "sub-ruta",
+    "pluralName": "sub-rutas",
+    "displayName": "SubRutas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "text"
+    },
+    "ruta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ruta.ruta",
+      "inversedBy": "sub_rutas"
+    },
+    "pedidos_shopifies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pedidos-shopify.pedidos-shopify",
+      "mappedBy": "sub_ruta"
+    },
+    "operadores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::operadore.operadore",
+      "mappedBy": "sub_ruta"
+    },
+    "ID_Operadora": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saldo_ls",
+  "info": {
+    "singularName": "saldo-l",
+    "pluralName": "saldo-ls",
+    "displayName": "SaldoL"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "text"
+    },
+    "Depositos": {
+      "type": "text"
+    },
+    "Retiros": {
+      "type": "text"
+    },
+    "Saldo": {
+      "type": "text"
+    },
+    "Ingresos": {
+      "type": "text"
+    },
+    "Egresos": {
+      "type": "text"
+    },
+    "UtilidadTotal": {
+      "type": "text"
+    }
+  }
+}

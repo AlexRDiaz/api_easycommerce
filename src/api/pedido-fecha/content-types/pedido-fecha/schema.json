@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_fechas",
+  "info": {
+    "singularName": "pedido-fecha",
+    "pluralName": "pedido-fechas",
+    "displayName": "Pedido-Fecha",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "text"
+    },
+    "pedidos_shopifies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pedidos-shopify.pedidos-shopify",
+      "mappedBy": "pedido_fecha"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mi_saldos",
+  "info": {
+    "singularName": "mi-saldo",
+    "pluralName": "mi-saldos",
+    "displayName": "MiSaldo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Numero": {
+      "type": "string"
+    }
+  }
+}

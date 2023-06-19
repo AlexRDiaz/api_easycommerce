@@ -1,0 +1,172 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos_shopifies",
+  "info": {
+    "singularName": "pedidos-shopify",
+    "pluralName": "pedidos-shopifies",
+    "displayName": "Pedidos-Shopify",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NumeroOrden": {
+      "type": "text"
+    },
+    "DireccionShipping": {
+      "type": "text"
+    },
+    "NombreShipping": {
+      "type": "text"
+    },
+    "TelefonoShipping": {
+      "type": "text"
+    },
+    "PrecioTotal": {
+      "type": "text"
+    },
+    "Observacion": {
+      "type": "text"
+    },
+    "CiudadShipping": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "pedidos_shopifies"
+    },
+    "producto_shopifies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::producto-shopify.producto-shopify",
+      "mappedBy": "pedidos_shopify"
+    },
+    "pedido_fecha": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pedido-fecha.pedido-fecha",
+      "inversedBy": "pedidos_shopifies"
+    },
+    "Estado_Interno": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "IdComercial": {
+      "type": "text"
+    },
+    "ProductoP": {
+      "type": "text"
+    },
+    "ProductoExtra": {
+      "type": "text"
+    },
+    "Cantidad_Total": {
+      "type": "text"
+    },
+    "Status": {
+      "type": "text",
+      "default": "PEDIDO PROGRAMADO"
+    },
+    "Estado_Logistico": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "Ruta": {
+      "type": "text"
+    },
+    "ruta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ruta.ruta",
+      "inversedBy": "pedidos_shopifies"
+    },
+    "transportadora": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::transportadora.transportadora",
+      "inversedBy": "pedidos_shopifies"
+    },
+    "Name_Comercial": {
+      "type": "text"
+    },
+    "Marca_Tiempo_Envio": {
+      "type": "text"
+    },
+    "sub_ruta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-ruta.sub-ruta",
+      "inversedBy": "pedidos_shopifies"
+    },
+    "operadore": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::operadore.operadore",
+      "inversedBy": "pedidos_shopifies"
+    },
+    "Fecha_Entrega": {
+      "type": "text"
+    },
+    "Comentario": {
+      "type": "text"
+    },
+    "TipoPago": {
+      "type": "text"
+    },
+    "Archivo": {
+      "type": "text"
+    },
+    "Estado_Pagado": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "Url_Pagado_Foto": {
+      "type": "text"
+    },
+    "Estado_Pago_Logistica": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "Url_P_L_Foto": {
+      "type": "text"
+    },
+    "Estado_Devolucion": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "Tienda_Temporal": {
+      "type": "text"
+    },
+    "Marca_T_D": {
+      "type": "text"
+    },
+    "Marca_T_D_T": {
+      "type": "text"
+    },
+    "Marca_T_D_L": {
+      "type": "text"
+    },
+    "Marca_T_I": {
+      "type": "text"
+    },
+    "DO": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "DT": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "DL": {
+      "type": "text",
+      "default": "PENDIENTE"
+    },
+    "Fecha_Confirmacion": {
+      "type": "text"
+    }
+  }
+}

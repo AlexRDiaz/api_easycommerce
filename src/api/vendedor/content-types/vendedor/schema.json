@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendedores",
+  "info": {
+    "singularName": "vendedor",
+    "pluralName": "vendedores",
+    "displayName": "Vendedores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre_Comercial": {
+      "type": "text"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "vendedores"
+    },
+    "Telefono1": {
+      "type": "text"
+    },
+    "Telefono2": {
+      "type": "text"
+    },
+    "CostoEnvio": {
+      "type": "text"
+    },
+    "CostoDevolucion": {
+      "type": "text"
+    },
+    "FechaAlta": {
+      "type": "text"
+    },
+    "Id_Master": {
+      "type": "text"
+    },
+    "Url_Tienda": {
+      "type": "text"
+    },
+    "Monto_Inicial": {
+      "type": "text"
+    }
+  }
+}
